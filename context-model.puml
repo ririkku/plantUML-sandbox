@@ -1,0 +1,21 @@
+@startuml
+left to right direction
+
+actor Person1
+
+rectangle システムに直接関わる人 {
+
+actor Person2
+actor Person3
+
+Person1 -- Person2
+Person1 -- Person3
+
+Person1 -- (システム)
+Person2 -- (システム)
+Person3 -- (システム)
+
+[Another System1] .. (システム)
+[Another System2] .. (システム)
+}
+@enduml
